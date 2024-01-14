@@ -1,0 +1,12 @@
+.\objects\rfid.o: ..\User\HARDWAVE\SRC\rfid.c
+.\objects\rfid.o: ..\User\HARDWAVE\INC\rfid.h
+.\objects\rfid.o: ..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
+.\objects\rfid.o: ..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h
+.\objects\rfid.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\rfid.o: ..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h
+.\objects\rfid.o: ..\User\stm32f10x_conf.h
+.\objects\rfid.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h
+.\objects\rfid.o: ..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
+.\objects\rfid.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h
+.\objects\rfid.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h
+.\objects\rfid.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h

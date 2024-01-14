@@ -1,0 +1,30 @@
+{
+    "files.associations": {
+        "rc522.h": "c",
+        "rfid.h": "c",
+        "spi.h": "c",
+        "stm32f10x.h": "c",
+        "stm32f10x_spi.h": "c",
+        "stm32f10x_gpio.h": "c",
+        "beep.h": "c",
+        "stm32f10x_tim.h": "c",
+        "delay.h": "c",
+        "sys.h": "c",
+        "dormlock.h": "c",
+        "main.h": "c",
+        "usart.h": "c",
+        "stdio.h": "c",
+        "sg90.h": "c"
+    },
+    "python.linting.enabled": true,
+    "python.analysis.typeshedPaths": [
+        ".vscode\\Pico-W-Stub"
+    ],
+    "python.languageServer": "Pylance",
+    "python.analysis.typeCheckingMode": "basic",
+    "python.analysis.extraPaths": [
+        ".vscode\\Pico-W-Stub\\stubs"
+    ],
+    "picowgo.syncFolder": "",
+    "picowgo.openOnStart": true
+}

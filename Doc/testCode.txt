@@ -1,0 +1,33 @@
+//测试版代码【不使用睡眠模式的版本】
+int main()
+{
+	uint32_t dormCard = 0xF38D2A10;
+	uint8_t cardID[5] = {0};
+	
+	// printf("cardID : 0x%02X%02X%02X%02X \r\n",cardID[0], cardID[1], cardID[2], cardID[3]);		//串口打印应该放在串口初始化之后
+	// printf("dormCard : 0x%X \r\n",dormCard);
+	Usart1_Init(115200);
+	SPIClass.SPI1_Init(); // SPI初始化
+	MFRC522_Init(); // RC522初始化
+	Beep_Init();
+	TIM1_PWM_Init();
+	
+	while(1) {
+		if(!RC522_cardScan(cardID)) {
+
+			if(!isDormCard(cardID,dormCard))
+			{
+				//printf("open the door!\r\n");
+				DoorLock_Open();
+			}
+			else
+			{
+				//printf("open failed...\r\n");
+			}
+			
+		} else {
+			//printf("card scan failure \r\n");
+		}
+		delay_ms(1000);
+    }
+}

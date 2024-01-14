@@ -1,0 +1,11 @@
+.\objects\mydelay.o: ..\User\HARDWAVE\SRC\myDelay.c
+.\objects\mydelay.o: ..\User\HARDWAVE\INC\myDelay.h
+.\objects\mydelay.o: ..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
+.\objects\mydelay.o: ..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h
+.\objects\mydelay.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\mydelay.o: ..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h
+.\objects\mydelay.o: ..\User\stm32f10x_conf.h
+.\objects\mydelay.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h
+.\objects\mydelay.o: ..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
+.\objects\mydelay.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h
+.\objects\mydelay.o: ..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h
