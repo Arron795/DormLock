@@ -1,5 +1,5 @@
-#ifndef __DOORLOCK_H
-#define __DOORLOCK_H
+#ifndef __DORMLOCK_H
+#define __DORMLOCK_H
 
 #include "main.h"
 
@@ -9,5 +9,6 @@ void DoorLock_Open(void);
 void configureExternalInterrupt(void);
 void shutOthersPeripherals(void);
 void EXTI9_5_IRQHandler(void);
-//static uint8_t flag = 0;
+
+extern volatile uint8_t flag;
 #endif

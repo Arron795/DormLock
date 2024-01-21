@@ -43,9 +43,9 @@ uint8_t isDormCard(uint8_t* CardID, uint32_t dormCard) {
 }
 
 
-
+// 配置外部中断引脚     一个开关按键作为外部中断    PB5
 void configureExternalInterrupt(void) {
-    // 配置外部中断引脚     一个开关按键作为外部中断    PB5
+    
     GPIO_InitTypeDef GPIO_InitStructure;
     EXTI_InitTypeDef EXTI_InitStructure;
     NVIC_InitTypeDef NVIC_InitStructure;
@@ -112,11 +112,11 @@ void EXTI9_5_IRQHandler(void) {
 
     if (EXTI_GetITStatus(EXTI_Line5) == SET)
     {
+		
         // 清除中断标志
         EXTI_ClearITPendingBit(EXTI_Line5);
-        //flag = 1;
         // 处理MFRC522中断  处理外部中断5的中断服务程序
-        //...这里不做处理
+        flag = 1;
     }
 
 }
